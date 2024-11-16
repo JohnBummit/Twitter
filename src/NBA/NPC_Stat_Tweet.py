@@ -62,7 +62,7 @@ def main():
     last_name = input("Enter the player's last name: ")
 
     # Ask user for their API key
-    api_key = '5f596e72-b1b2-4a3f-968a-d50ac2dec97f'
+    api_key = ''
 
     # Get player ID
     player_id = get_player_id(first_name, last_name, api_key)
