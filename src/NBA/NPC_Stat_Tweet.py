@@ -3,18 +3,15 @@ import tweepy
 from datetime import datetime
 
 def get_twitter_api():
-    # Replace these with your Twitter credentials
-    # Replace these with your Twitter credentials
-    api_key = 'your api key'
-    api_key_secret = 'your api key'
-    consumer_key = 'your consumer key'
-    consumer_secret = 'your consumer secret'
+    # Replace these with your Twitter credentials - No you niggas cannot use my api keys
+    api_key = 'your api key for twitter'
+    api_key_secret = 'your api key for secret twitter '
+    
     access_token = ''
     access_secret = ''
+    bearer_token = 'your bearer token'
 
     
-    
-    bearer_token = ''
     client = tweepy.Client(bearer_token=bearer_token, consumer_key=api_key, consumer_secret=api_key_secret, access_token=access_token, access_token_secret=access_secret)
     return client
 
@@ -62,7 +59,7 @@ def main():
     last_name = input("Enter the player's last name: ")
 
     # Ask user for their API key
-    api_key = ''
+    api_key = 'Ball is Life API key here'
 
     # Get player ID
     player_id = get_player_id(first_name, last_name, api_key)
